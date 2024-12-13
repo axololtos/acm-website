@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/* App container with a single background image */
+.app {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url('./assets/2024-12-12T17_53_02.851Z.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  z-index: 10;
+}
+
+.navbar .logo {
+  width: 100px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links span {
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar .nav-links span:hover {
+  color: #007BFF;
+}
+
+/* General Section Styling */
+.section {
+  width: 100%;
+  text-align: center;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+/* Specific Section Styling */
+.home-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 170px;
+  margin-left: 45px;
+}
+
+.about-section, .gallery-section, .team-section, .events-section, .join-us-section {
+  padding: 40px 20px;
+}
+
+/* Home Section - Title */
+.home-additional-text {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: -10px; 
+}
+
+.home-additional-text h1 {
+  width: 936px;
+  text-align: center;
+  font-family: 'Sora', sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 120%;
+  background: linear-gradient(180deg, #F33CC0 13.43%, #4349FF 73.37%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: -100px;
+  display: inline;
+}
+
+/* Apply different color gradient to POSIBILITIES */
+.home-additional-text .possibilities {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(180deg, #F33CC0 10%, #4349FF 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; 
+  margin-top: -10px;
+}
+
+.sub-heading {
+  color: #CAC6DD;
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-top: 13px;
+}
+
+.join-us-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.join-us-text:hover {
+  color: #007BFF;
+}
+
+/* About Section */
+.about-section {
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-left: -16px;
+  margin-top: 111px;
+}
+
+/* ACM SIST Text Styling */
+.acm-sist-text {
+  font-family: 'Sora', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(180deg, #F33CC0 13.43%, #4349FF 73.37%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 80px;
+  margin-left: -1000px;
+  margin-bottom: 20px;
+}
+
+/* ACM Paragraph Styling */
+.acm-paragraph {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: bold;
+  text-align: left;
+  color: #ffffff;
+  max-width: 10000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.acm-paragraph span {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #CAC6DD;
+}
+
+.acm-paragraph span:hover {
+  color: #007BFF;
+  cursor: pointer;
+}
+
+/* Gallery Section */
+.gallery-section h1 {
+  font-size: 1rem;
+  color: #CAD1E9;
+  font-family: 'Source Code Pro', monospace;
+  margin-top: -769px;
+  margin-left: -17px;
+}
+
+.gallery-section p {
+  margin-top: 50px;
+  color: #CAD1E9;
+  font-weight: bolder;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.7rem;
+}
+
+/* Team Section */
+.team-section h1 {
+  font-size: 1rem;
+  color: #CAD1E9;
+  font-family: 'Source Code Pro', monospace;
+  margin-top: -804px;
+  margin-left: -24px;
+}
+
+.team-section p {
+  margin-top: 49px;
+  color: #CAD1E9;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.4rem;
+}
+
+/* Events Section */
+.events-section h1 {
+  font-size: 1rem;
+  color: #CAD1E9;
+  font-family: 'Source Code Pro', monospace;
+  margin-top: -220px;  
+  margin-left: -24px;  
+}
+
+.events-section p {
+  margin-top: 3px;
+  color: #CAD1E9;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.2rem;  
+}
+
+#coming-soon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #CAD1E9;
+  font-family: 'Source Code Pro', monospace;
+  margin-top: 660px;
+}
+
+/* Join Us Section */
+.join-us-section h1 {
+  font-size: 3rem;
+  color: var(--neutral-01100, #FFF);
+  font-family: 'Source Code Pro', monospace;
+  position: relative; /* Added */
+  top: -280px; /* Adjusts the position of h1 downward */
+  margin-bottom: 10px;
+}
+
+.join-us-section h2 {
+  font-size: 3rem;
+  color: var(--neutral-01100, #FFF);
+  font-family: 'Source Code Pro', monospace;
+  position: relative; /* Added */
+  top: -290px; /* Adjusts the position of h2 downward */
+  margin-bottom: -5px;
+}
+
+.join-us-section p {
+  font-size: 20px;
+  position: absolute;
+  top: 5000px; left: 480px; /* Added */
+  color: var(--neutral-01100, #FFF);
+  font-family: "Source Code Pro", monospace;
+
+}
+
+.join-us-section h3 {
+  color: #CAD1E9;
+  font-family: "Source Code Pro", monospace;
+  font-size: 27px;
+  position: relative; /* Added */
+  top: -175px;
+}
+
+.join-us-section h4 {
+  color: #CAD1E9;
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+  top: -113px; left: 4px;
+  font-size: 18px;
+  margin-right: -270px;
+}
+
+.join-us-section h5 {
+  color: #CAD1E9;
+  font-family: "Source Code Pro", monospace;
+  position: absolute;
+  top: 5200px; left: 270px;
+  font-size: 18px;
+}
+
+.join-us-section h6 {
+  position: absolute;
+  color: #CAD1E9;
+  font-family: "Source Code Pro", monospace;
+  top: 5290px; left: 270px;
+  font-size: 18px;
+}
+
+button {
+  background-color:transparent; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  padding: 12px 20px; /* Padding around the text */
+  text-align: center; /* Center text inside the button */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Ensure it behaves like a block-level element */
+  font-size: 16px; /* Set font size */
+  cursor: pointer; /* Change cursor on hover */
+  border-radius: none; 
+  position: absolute;
+  margin-top: 432px;
+  margin-left: 749px;
+  font-family: "Source Code Pro", monospace;/* Rounded corners */
+  
+}
+
+.response-message {
+  position: absolute;
+  font-size: 16px; /* Adjust text size */
+  color: green; /* Text color for success message */
+  background-color: #e8f5e9; /* Light green background for success */
+  padding: 10px; /* Space inside the message box */
+  margin-top: 15px; /* Space between form and message */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #4caf50; /* Border matching the color theme */
+  text-align: center; /* Center the message */
+  width: 100%; /* Make the message take up the full width */
+  box-sizing: border-box;/* Include padding and borders in the element's width */
+  margin-top: 5530px;
+  margin-left: 0px;
+}
+.response-message.error {
+  color: red;
+  background-color: #f8d7da; /* Light red background for error */
+  border-color: #f44336; /* Red border for error */
+}
+
+
+.join-us-section {
+  /* Optional styling for the section */
+  padding: 20px;
+  text-align: center;
+}
+.data-inputs{ /* Make the input fields take full width of the container */
+  font-size: 1.2rem;
+  width: 440px;
+  height: 110px;
+  border: none;
+  margin-left: 856px;
+  position: relative;
+  margin-top: 70px;
+  margin-bottom: -9px;
+  /* Make the input fields take full width of the container */
+  padding: 10px; /* Add padding for better spacing */
+  margin-top: -90px;
+  font-size: 16px;
+  background: transparent;
+  color: #FFF;
+  font-family: "Source Code Pro", monospace;
+}
+.full-name-input {
+  position: absolute;
+  font-size: 1.2rem;
+  width: 25.6%;
+  height: 45px;
+  margin-top: 44px;
+  font-size: 16px;
+  margin-left: 256px;
+  background-color: transparent; /* Transparent background */
+  color: #FFF; /* Text color */
+  font-family: "Source Code Pro", monospace;
+
+  border: none; /* Consistent border */
+  outline: none; /* Remove focus outline */
+  box-shadow: none; /* Remove any shadow */
+  -webkit-appearance: none; /* Disable default browser appearance */
+  appearance: none; /* Cross-browser appearance reset */
+  transition: none; /* Disable any transition effects */
+}
+.email-input {
+  position: absolute;
+  width: 26.6%;
+  padding: 10px;
+  border: none;
+  margin: 10px 0;
+  margin-top: 223px;
+  margin-left: 246px;
+
+   /* Light border color */
+  background-color: transparent; /* Transparent background */
+  color: #CAD1E9; /* Text color */
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  outline: none;
+}
+
+.full-name-input::placeholder, .email-input::placeholder {
+  color: #CAD1E9; /* Placeholder text color */
+}
+
+.full-name-input:focus, .email-input:focus {
+  border: 2px solid #fff; /* Change border color on focus */
+}
+
+.join-us-text {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #CAD1E9;
+  font-family: "Source Code Pro", monospace;
+  margin-top: -2px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.join-us-text:hover {
+  color: #007BFF;
+}
+
+
+@media (max-width: 768px) {
+  .home-additional-text h1 {
+    font-size: 1.2rem;
+  }
+
+  .home-additional-text p {
+    font-size: 1rem;
+  }
+
+  .gallery-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .gallery-section p {
+    font-size: 1.1rem;
+  }
+
+  .about-section {
+    font-size: 0.9rem;
+  }
+
+  .acm-sist-text {
+    font-size: 1.8rem;
+  }
+
+  .acm-paragraph {
+    font-size: 1.3rem;
+  }
+}

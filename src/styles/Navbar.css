@@ -1,0 +1,88 @@
+/* Navbar Container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent; /* Set background to transparent */
+  z-index: 1000; /* Keeps the navbar above other content */
+  padding: 1px 0;
+  font-size: 2rem;
+  box-shadow: none; /* Optional: removes any shadow effect */
+}
+
+/* Navbar content container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Space between the logo/text and the links */
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 2rem;
+  color: #CAD1E9; /* Ensures the container text color */
+}
+
+/* Left side content (logo + text) */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  gap: 15px; /* Adds space between logo and text */
+}
+
+/* Navbar Logo */
+.navbar-logo {
+  width: 200px; 
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain;
+  font-size: 2rem;
+  margin-left: -40px;
+}
+
+/* Navbar Text */
+.navbar-text {
+  color: #CAD1E9; /* Text color */
+  font-feature-settings: 'dlig' on;
+  font-family: "Source Code Pro", monospace; /* Fallback font added */
+  font-size: 24px; /* Adjust size as needed */
+  font-style: normal;
+  font-weight: 700; /* Bold font */
+  line-height: 1.2; /* Adjust spacing between lines */
+  letter-spacing: -0.222px; /* Slight adjustment to spacing */
+  text-align: left; /* Align text to the left */
+  display: flex;
+  flex-direction: column; /* Stack text lines vertically */
+  gap: 5px; /* Space between lines */
+  font-weight: bold;
+}
+.navbar-text h1 {
+  color: #CAD1E9;
+  font-family: "Source Code Pro", monospace;
+  font-size: 24px;
+  font-weight: normal;
+
+}
+/* Navbar links container */
+.navbar-links {
+  display: flex;
+  font-size: 2rem;
+  gap: 20px; /* Adds space between the links */
+}
+
+/* Navbar links styles */
+.navbar-links a {
+  color: #CAD1E9; /* Match the text color */
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-size: 1.6rem;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Navbar link hover effect */
+.navbar-links a:hover {
+  background-color: #575757; /* Optional hover background */
+  border-radius: 5px;
+  color: white; /* Changes to white on hover */
+}
