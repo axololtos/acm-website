@@ -142,7 +142,7 @@ body {
 }
 
 /* About Section */
-.about-section {
+.about-section { 
   padding: 60px 20px;
   text-align: center;
   color: white;
@@ -151,7 +151,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   margin-left: -16px;
-  margin-top: 111px;
+  margin-top: 128px;
 }
 
 /* ACM SIST Text Styling */
@@ -200,7 +200,7 @@ body {
   font-size: 1rem;
   color: #CAD1E9;
   font-family: 'Source Code Pro', monospace;
-  margin-top: -769px;
+  margin-top: -744px;
   margin-left: -17px;
 }
 
@@ -217,7 +217,7 @@ body {
   font-size: 1rem;
   color: #CAD1E9;
   font-family: 'Source Code Pro', monospace;
-  margin-top: -804px;
+  margin-top: -754px;
   margin-left: -24px;
 }
 
@@ -233,7 +233,7 @@ body {
   font-size: 1rem;
   color: #CAD1E9;
   font-family: 'Source Code Pro', monospace;
-  margin-top: -220px;  
+  margin-top: -150px;  
   margin-left: -24px;  
 }
 
@@ -249,7 +249,7 @@ body {
   font-weight: bold;
   color: #CAD1E9;
   font-family: 'Source Code Pro', monospace;
-  margin-top: 660px;
+  margin-top: 60px;
 }
 
 /* Join Us Section */
@@ -258,8 +258,8 @@ body {
   color: var(--neutral-01100, #FFF);
   font-family: 'Source Code Pro', monospace;
   position: relative; /* Added */
-  top: -280px; /* Adjusts the position of h1 downward */
-  margin-bottom: 10px;
+  top: -10px; /* Adjusts the position of h1 downward */
+  margin-bottom: -5px;
 }
 
 .join-us-section h2 {
@@ -267,13 +267,13 @@ body {
   color: var(--neutral-01100, #FFF);
   font-family: 'Source Code Pro', monospace;
   position: relative; /* Added */
-  top: -290px; /* Adjusts the position of h2 downward */
+  top: -140px; /* Adjusts the position of h2 downward */
   margin-bottom: -5px;
 }
 
 .join-us-section p {
   font-size: 20px;
-  position: absolute;
+  position: relative;
   top: 5000px; left: 480px; /* Added */
   color: var(--neutral-01100, #FFF);
   font-family: "Source Code Pro", monospace;
@@ -300,13 +300,13 @@ body {
 .join-us-section h5 {
   color: #CAD1E9;
   font-family: "Source Code Pro", monospace;
-  position: absolute;
+  position: relative;
   top: 5200px; left: 270px;
   font-size: 18px;
 }
 
 .join-us-section h6 {
-  position: absolute;
+  position: relative;
   color: #CAD1E9;
   font-family: "Source Code Pro", monospace;
   top: 5290px; left: 270px;
@@ -324,15 +324,15 @@ button {
   font-size: 16px; /* Set font size */
   cursor: pointer; /* Change cursor on hover */
   border-radius: none; 
-  position: absolute;
-  margin-top: 432px;
+  position: relative;
+  margin-top: 260px;
   margin-left: 749px;
   font-family: "Source Code Pro", monospace;/* Rounded corners */
   
 }
 
 .response-message {
-  position: absolute;
+  position: relative;
   font-size: 16px; /* Adjust text size */
   color: green; /* Text color for success message */
   background-color: #e8f5e9; /* Light green background for success */
@@ -342,11 +342,11 @@ button {
   border: 1px solid #4caf50; /* Border matching the color theme */
   text-align: center; /* Center the message */
   width: 100%; /* Make the message take up the full width */
-  box-sizing: border-box;/* Include padding and borders in the element's width */
+  box-sizing: border-box;   /* Include padding and borders in the element's width */
   margin-top: 5530px;
   margin-left: 0px;
 }
-.response-message.error {
+.response-message.error { 
   color: red;
   background-color: #f8d7da; /* Light red background for error */
   border-color: #f44336; /* Red border for error */
@@ -376,7 +376,7 @@ button {
   font-family: "Source Code Pro", monospace;
 }
 .full-name-input {
-  position: absolute;
+  position: relative;
   font-size: 1.2rem;
   width: 25.6%;
   height: 45px;
@@ -394,8 +394,8 @@ button {
   appearance: none; /* Cross-browser appearance reset */
   transition: none; /* Disable any transition effects */
 }
-.email-input {
-  position: absolute;
+.phone_number-input {
+  position: relative;
   width: 26.6%;
   padding: 10px;
   border: none;
@@ -403,7 +403,7 @@ button {
   margin-top: 223px;
   margin-left: 246px;
 
-   /* Light border color */
+  /* Light border color */
   background-color: transparent; /* Transparent background */
   color: #CAD1E9; /* Text color */
   font-family: "Source Code Pro", monospace;
@@ -411,13 +411,14 @@ button {
   outline: none;
 }
 
-.full-name-input::placeholder, .email-input::placeholder {
+.full-name-input::placeholder, .phone_number-input::placeholder {
   color: #CAD1E9; /* Placeholder text color */
 }
 
-.full-name-input:focus, .email-input:focus {
+.full-name-input:focus, .phone_number-input:focus {
   border: 2px solid #fff; /* Change border color on focus */
 }
+
 
 .join-us-text {
   font-size: 1.2rem;

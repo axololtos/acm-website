@@ -9,6 +9,7 @@
   padding: 1px 0;
   font-size: 2rem;
   box-shadow: none; /* Optional: removes any shadow effect */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
 /* Navbar content container */
@@ -33,7 +34,7 @@
 
 /* Navbar Logo */
 .navbar-logo {
-  width: 200px; 
+  width: 200px;
   height: auto; /* Maintain aspect ratio */
   object-fit: contain;
   font-size: 2rem;
@@ -54,15 +55,16 @@
   display: flex;
   flex-direction: column; /* Stack text lines vertically */
   gap: 5px; /* Space between lines */
-  font-weight: bold;
 }
+
+/* Navbar Header Text */
 .navbar-text h1 {
   color: #CAD1E9;
   font-family: "Source Code Pro", monospace;
   font-size: 24px;
   font-weight: normal;
-
 }
+
 /* Navbar links container */
 .navbar-links {
   display: flex;
@@ -74,15 +76,50 @@
 .navbar-links a {
   color: #CAD1E9; /* Match the text color */
   text-decoration: none;
-  font-size: 1.1rem;
   font-size: 1.6rem;
   padding: 8px 16px;
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+  border-radius: 5px; /* Rounded corners for the links */
 }
 
 /* Navbar link hover effect */
 .navbar-links a:hover {
   background-color: #575757; /* Optional hover background */
-  border-radius: 5px;
   color: white; /* Changes to white on hover */
+}
+
+/* Live Stream Link */
+.navbar-links .live-stream {
+  background-color: transparent; /* Highlighted background for live stream */
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Hover effect for Live Stream */
+.navbar-links .live-stream:hover {
+  background-color: #575757; /* Darker hover color */
+}
+
+/* On Scroll - Change Navbar Background */
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); /* Add background on scroll */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .navbar-links a {
+    margin: 5px 0;
+  }
 }
